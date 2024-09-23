@@ -197,7 +197,7 @@ Scanner sc = new Scanner (System.in);
         
         System.out.println("¿Puede salir a la calle?: " + puedeSalir);
 */
-        buenos dias 
+        buenos diass 
     }
     
 }
