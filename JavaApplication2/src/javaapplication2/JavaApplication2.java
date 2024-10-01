@@ -197,7 +197,152 @@ Scanner sc = new Scanner (System.in);
         
         System.out.println("¿Puede salir a la calle?: " + puedeSalir);
 */
+*/
 
+/*
+Un economista te ha encargado un programa para realizar cálculos con el IVA. 
+La aplicación debe solicitar la base imponible y el IVA que se debe aplicar. 
+Muestra en pantalla el importe correspondiente al IVA y el total
+*/
+/*Scanner sc = new Scanner(System.in);
+//Solicitamos al usuario la base imponible
+double baseImponible;
+System.out.println("Introduce la base imponible: ");
+baseImponible = sc.nextDouble();
+//Solicitamos al usuario el porcentaje de IVA
+double iva;
+System.out.println("Introduce el IVA: ");
+iva = sc.nextDouble();
+//Sumamos ambos importes para que nos de el importe total del producto
+double importeTotal;
+importeTotal = baseImponible * (iva/100) + baseImponible;
+//Le decimos al usuario el importe total del producto
+System.out.println("El importe total es: " + importeTotal);
+*/
+     
+        
+//ACTIVIDAD 1.11
+
+/*final double PRECIO_PERA, PRECIO_MANZANA;
+PRECIO_PERA = 1.95;
+PRECIO_MANZANA = 2.35;
+double beneficioAnual, beneficioAnualM, beneficioAnualP, kilosManzana1, kilosManzana2, kilosPeras1, kilosPeras2;
+Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca kilos manzanas primer semestre: ");
+        kilosManzana1 = sc.nextDouble();
+        System.out.println("Introduzca kilos peras primer semestre: ");
+        kilosPeras1 = sc.nextDouble();
+        System.out.println("Introduzca kilos manzanas segundo trimestre: ");
+        kilosManzana2 = sc.nextDouble();
+        System.out.println("Introduzca kilos peras segundo trimestre: ");
+        kilosPeras2 = sc.nextDouble();
+        
+        
+        beneficioAnualM = (kilosManzana1 + kilosManzana2) * PRECIO_MANZANA;
+        System.out.println("El beneficio anual de las manzanas es: " + beneficioAnualM);
+        
+        beneficioAnualP = (kilosPeras1 + kilosPeras2) * PRECIO_PERA;
+        System.out.println("El beneficio anual de las peras es: " + beneficioAnualP);
+        
+        beneficioAnual = beneficioAnualP + beneficioAnualM;
+        System.out.println("El beneficio anual total es: " + beneficioAnual);
+ */
+
+//ACTIVIDAD 1.12.
+
+/* int n, valorAbsoluto;
+        System.out.println("Escribe un número (positivo o negativo): ");
+        Scanner sc = sc.nextInt();
+        valorAbsoluto = n>0 ? n : -1*n;
+        System.out.println("El valor absoluto de " + n + " es " valorAbsoluto);
+*/        
+
+//ACTIVIDAD 1.13.
+// Scanner sc = new Scanner(System.in); MODO MÁS RAPIDO
+// DESPUES DE CADA VARIABLE: variable = sc.nextInt();
+
+/*int nota1, nota2, nota3;
+int notaMedia1;
+double notaMedia2;
+Scanner sc = new Scanner(System.in);
+        System.out.println("Nota primer trimestre: ");
+        nota1 = sc.nextInt();
+        System.out.println("Nota segundo trimestre: ");
+        nota2 = sc.nextInt();
+        System.out.println("Nota tercer trimestre: ");
+        nota3 = sc.nextInt();
+notaMedia2 = (nota1 + nota2 + nota3) / 3.0; 
+notaMedia1 = (int)notaMedia2;
+
+        System.out.println("La nota media segun el expediente academico es: " + notaMedia2);
+        System.out.println("La nota media es: " + notaMedia1);
+ */
+
+//ACTIVIDAD RESUELTA 1.14.
+
+/*double n;
+int redondeo;
+Scanner sc = new Scanner(System.in);
+sc.useLocale(Locale.US);
+        System.out.println("Introduce un numero decimal (con punto): ");
+        n = sc.nextDouble();
+        redondeo = (int) (n + 0.5);
+        System.out.println(n + " redondeado es " + redondeo);
+*/        
+
+
+/*//ACTIVIDAD RESUELTA 2.1.
+//LE PEDIMOS AL USUARIO QUE INTRODUZCA UN NUMERO ENTERO PARA SABER SI ES PAR O IMPAR
+Scanner sc = new Scanner(System.in);
+int numero;
+        System.out.println("Introduzca un número ");
+        numero = sc.nextInt();
+        if (numero %2 == 0) {
+            System.out.println("El numero es par");
+        }
+        else {
+        System.out.println("El numero es impar");
+        };        
+ */
+
+/*//ACTIVIDAD RESUELTA 2.5.
+Scanner sc = new Scanner(System.in);
+//introducimos variables
+int n1, n2;
+int mayor, menor;
+//pedimos al usuario que introduzca dos numeros
+        System.out.println("Introduzca un numero: ");
+        n1 = sc.nextInt();
+        System.out.println("Introduzca otro numero: ");
+        n2 = sc.nextInt();
+        mayor = n1>n2 ? n1 : n2; // si n1 es el mayor, entonces mayor=n1, si no = n2
+        menor = n1<n2 ? n1 : n2; //si n1 es menor que n2, entonces menor=n1, si no =n1
+//ordenamos los numeros de forma decreciente
+        System.out.println(mayor + ", " + menor);
+*/
+
+//ACTIVIDAD RESUELTA 2.7.
+Scanner sc = new Scanner(System.in);
+int a, b, c; //numeros a ordenar 
+        System.out.println("Introduzca primer numero: ");
+        a = sc.nextInt();
+        System.out.println("Introduzca segundo numero: ");
+        b = sc.nextInt();
+        System.out.println("Introduzca tercer numero: ");
+        c = sc.nextInt();
+        if (a > b && b >c) {
+            System.out.println(a + ", " + b + ", " + c);
+        } else if (a > c && c > b) {
+            System.out.println(a + ", " + c + ", " + b);
+        } else if (b > a && c > a) {
+            System.out.println(b + ", " + a + ", " + c);
+        } else if (b > c && c > a) { 
+            System.out.println(b + ", " + c + ", " + a);
+        } else if (c > a && a > b) {
+            System.out.println(c + ", " + a + ", " + b);
+        } else if (c > b && b > a) {
+            System.out.println(c + ", " + b + ", " + a);
+        }
     }
     
 }
